@@ -99,8 +99,8 @@
         /* Stats Grid - Futuristic Cards */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
             margin: 40px 0;
         }
 
@@ -108,7 +108,7 @@
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.15) 0%, rgba(10, 14, 10, 0.8) 100%);
             border: 2px solid #4b6b44;
             border-radius: 15px;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -138,7 +138,7 @@
         }
 
         .stat-number {
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: bold;
             color: #a8d5a3;
             text-shadow: 0 0 20px rgba(168, 213, 163, 0.5);
@@ -146,7 +146,7 @@
         }
 
         .stat-label {
-            font-size: 1.1em;
+            font-size: 1em;
             color: #8fb88a;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -157,15 +157,15 @@
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.1) 0%, rgba(10, 14, 10, 0.7) 100%);
             border: 1px solid #4b6b44;
             border-radius: 20px;
-            padding: 40px;
+            padding: 30px;
             margin-bottom: 30px;
             box-shadow: 0 5px 30px rgba(75, 107, 68, 0.2);
         }
 
         h2 {
             color: #a8d5a3;
-            font-size: 2.5em;
-            margin-bottom: 30px;
+            font-size: 2em;
+            margin-bottom: 25px;
             text-shadow: 0 0 10px rgba(168, 213, 163, 0.3);
             border-bottom: 3px solid #4b6b44;
             padding-bottom: 15px;
@@ -174,43 +174,47 @@
 
         h3 {
             color: #8fb88a;
-            font-size: 1.8em;
-            margin: 30px 0 20px 0;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
             text-shadow: 0 0 5px rgba(143, 184, 138, 0.3);
         }
 
         h4 {
             color: #a8d5a3;
-            font-size: 1.4em;
+            font-size: 1.2em;
             margin: 20px 0 15px 0;
         }
 
         p, li {
-            line-height: 1.9;
+            line-height: 1.8;
             color: #c8d9c5;
-            font-size: 1.05em;
-            margin-bottom: 15px;
+            font-size: 1em;
+            margin-bottom: 12px;
         }
 
         /* Tab Navigation - Futuristic */
         .tab-container {
             display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 12px;
+            margin-bottom: 25px;
             flex-wrap: wrap;
         }
 
         .tab-btn {
-            padding: 15px 30px;
+            padding: 14px 24px;
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.2) 0%, rgba(10, 14, 10, 0.8) 100%);
             border: 2px solid #4b6b44;
             border-radius: 30px;
             color: #8fb88a;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 0.95em;
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .tab-btn::before {
@@ -263,14 +267,14 @@
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.1) 0%, rgba(10, 14, 10, 0.6) 100%);
             border: 2px solid #4b6b44;
             border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 20px;
+            margin: 25px 0;
             box-shadow: 0 5px 25px rgba(75, 107, 68, 0.2);
         }
 
         .chart-wrapper {
             position: relative;
-            height: 400px;
+            height: 350px;
         }
 
         /* Info Boxes */
@@ -278,8 +282,8 @@
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.15) 0%, rgba(10, 14, 10, 0.7) 100%);
             border-left: 5px solid #4b6b44;
             border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
+            padding: 20px;
+            margin: 20px 0;
             box-shadow: 0 5px 20px rgba(75, 107, 68, 0.15);
             transition: all 0.3s ease;
         }
@@ -298,16 +302,16 @@
         /* Solution Cards */
         .solution-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
         }
 
         .solution-card {
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.2) 0%, rgba(10, 14, 10, 0.8) 100%);
             border: 2px solid #4b6b44;
             border-radius: 15px;
-            padding: 30px;
+            padding: 25px;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
@@ -336,27 +340,27 @@
         }
 
         .solution-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
+            font-size: 2.5em;
+            margin-bottom: 12px;
             display: block;
         }
 
         .solution-title {
             color: #a8d5a3;
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            font-size: 1.3em;
+            margin-bottom: 12px;
             font-weight: bold;
         }
 
         ul {
-            margin-left: 25px;
-            margin-top: 15px;
+            margin-left: 20px;
+            margin-top: 12px;
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             position: relative;
-            padding-left: 10px;
+            padding-left: 8px;
         }
 
         li::before {
@@ -372,8 +376,8 @@
             background: linear-gradient(135deg, rgba(75, 107, 68, 0.3) 0%, rgba(10, 14, 10, 0.9) 100%);
             border: 3px solid #a8d5a3;
             border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
+            padding: 30px;
+            margin: 30px 0;
             box-shadow: 0 10px 50px rgba(168, 213, 163, 0.3);
             position: relative;
             overflow: hidden;
@@ -402,14 +406,14 @@
             border-top: 2px solid #4b6b44;
             color: #8fb88a;
             text-align: center;
-            padding: 30px;
-            margin-top: 50px;
+            padding: 25px;
+            margin-top: 40px;
             border-radius: 20px 20px 0 0;
         }
 
         /* Scrollbar */
         ::-webkit-scrollbar {
-            width: 12px;
+            width: 10px;
         }
 
         ::-webkit-scrollbar-track {
@@ -429,17 +433,19 @@
         .intelligence-level {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin: 20px 0;
-            padding: 20px;
+            gap: 12px;
+            margin: 18px 0;
+            padding: 18px;
             background: rgba(75, 107, 68, 0.1);
             border-radius: 10px;
             border: 1px solid #4b6b44;
+            flex-wrap: wrap;
         }
 
         .level-bar {
             flex: 1;
-            height: 30px;
+            min-width: 150px;
+            height: 28px;
             background: rgba(10, 14, 10, 0.5);
             border-radius: 15px;
             overflow: hidden;
@@ -461,22 +467,260 @@
         .level-label {
             color: #a8d5a3;
             font-weight: bold;
-            min-width: 100px;
+            min-width: 80px;
+            font-size: 0.95em;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
+        /* RESPONSIVE DESIGN - TABLET */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+
+            header {
+                padding: 40px 30px;
+            }
+
             header h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
-            
-            .tab-btn {
-                font-size: 0.9em;
-                padding: 12px 20px;
+
+            h2 {
+                font-size: 1.8em;
             }
-            
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 18px;
+            }
+
+            .solution-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        /* RESPONSIVE DESIGN - MOBILE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            header {
+                padding: 30px 20px;
+                border-radius: 15px;
+                margin-bottom: 25px;
+            }
+
+            header h1 {
+                font-size: 1.6em;
+                letter-spacing: 1px;
+                line-height: 1.3;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            header p:last-child {
+                font-size: 0.85em;
+            }
+
+            .glow-line {
+                margin: 20px 0;
+            }
+
+            .section {
+                padding: 20px;
+                border-radius: 15px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin: 20px 0 12px 0;
+            }
+
+            h4 {
+                font-size: 1.1em;
+                margin: 15px 0 10px 0;
+            }
+
+            p, li {
+                font-size: 0.95em;
+                line-height: 1.7;
+                margin-bottom: 10px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin: 25px 0;
+            }
+
+            .stat-card {
+                padding: 20px;
+            }
+
             .stat-number {
                 font-size: 2.5em;
+            }
+
+            .stat-label {
+                font-size: 0.9em;
+            }
+
+            .tab-container {
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .tab-btn {
+                padding: 12px 18px;
+                font-size: 0.85em;
+                flex: 1;
+                min-width: calc(50% - 5px);
+                border-radius: 25px;
+            }
+
+            .chart-container {
+                padding: 15px;
+                margin: 20px 0;
+                border-radius: 12px;
+            }
+
+            .chart-container h4 {
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+
+            .chart-wrapper {
+                height: 280px;
+            }
+
+            .insight-box, .recommendation, .highlight-box, .intelligence-box {
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin: 20px 0;
+            }
+
+            .solution-card {
+                padding: 20px;
+            }
+
+            .solution-icon {
+                font-size: 2em;
+            }
+
+            .solution-title {
+                font-size: 1.2em;
+            }
+
+            .conclusion-summary {
+                padding: 20px;
+                border-radius: 15px;
+                margin: 25px 0;
+            }
+
+            .intelligence-level {
+                padding: 15px;
+                gap: 10px;
+            }
+
+            .level-bar {
+                min-width: 100%;
+                height: 24px;
+            }
+
+            .level-label {
+                font-size: 0.9em;
+                min-width: 100%;
+                text-align: center;
+            }
+
+            ul {
+                margin-left: 18px;
+            }
+
+            footer {
+                padding: 20px;
+                margin-top: 30px;
+            }
+
+            footer p {
+                font-size: 0.9em;
+            }
+        }
+
+        /* RESPONSIVE DESIGN - SMALL MOBILE */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 25px 15px;
+            }
+
+            header h1 {
+                font-size: 1.4em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+
+            p, li {
+                font-size: 0.9em;
+            }
+
+            .tab-btn {
+                padding: 10px 14px;
+                font-size: 0.8em;
+                min-width: 100%;
+            }
+
+            .stat-number {
+                font-size: 2em;
+            }
+
+            .chart-wrapper {
+                height: 250px;
+            }
+
+            .solution-card {
+                padding: 18px;
+            }
+
+            .conclusion-summary {
+                padding: 18px;
             }
         }
     </style>
@@ -523,10 +767,10 @@
         <!-- Tab Navigation -->
         <div class="section">
             <div class="tab-container">
-                <button class="tab-btn active" data-tab="intelligence">🧠 PENCERDASAN MENDALAM</button>
-                <button class="tab-btn" data-tab="solutions">💡 SOLUSI PENCERDASAN</button>
-                <button class="tab-btn" data-tab="visualization">📈 VISUALISASI DATA</button>
-                <button class="tab-btn" data-tab="conclusion">✅ KESIMPULAN & DAMPAK</button>
+                <button class="tab-btn active" data-tab="intelligence">🧠 PENCERDASAN</button>
+                <button class="tab-btn" data-tab="solutions">💡 SOLUSI</button>
+                <button class="tab-btn" data-tab="visualization">📈 VISUALISASI</button>
+                <button class="tab-btn" data-tab="conclusion">✅ KESIMPULAN</button>
             </div>
 
             <!-- Tab: Deep Intelligence Analysis -->
@@ -538,7 +782,7 @@
                     <p><strong>Pencerdasan (Intelligence Enhancement)</strong> adalah proses sistematis untuk meningkatkan kapasitas kognitif, kesadaran kritis, dan kompetensi praktis individu atau kelompok dalam memahami, menganalisis, dan merespons isu kompleks—dalam hal ini, pengelolaan air bersih dan ketahanan air.</p>
                     
                     <div class="intelligence-level">
-                        <div class="level-label">Level Pencerdasan Saat Ini:</div>
+                        <div class="level-label">Level Saat Ini:</div>
                         <div class="level-bar">
                             <div class="level-fill" style="width: 33%;"></div>
                         </div>
@@ -546,7 +790,7 @@
                     </div>
                     
                     <div class="intelligence-level">
-                        <div class="level-label">Target Pencerdasan:</div>
+                        <div class="level-label">Target:</div>
                         <div class="level-bar">
                             <div class="level-fill" style="width: 85%;"></div>
                         </div>
@@ -565,7 +809,7 @@
                         <li>Memahami proses koagulasi, flokulasi, sedimentasi, filtrasi, dan disinfeksi dalam WTP</li>
                         <li>Mengerti parameter kualitas air (pH, TDS, turbidity, mikrobiologi)</li>
                         <li>Menguasai konsep water footprint dan virtual water</li>
-                        <li>Memahami hubungan antara water security dengan food security dan energy security (Water-Food-Energy Nexus)</li>
+                        <li>Memahami hubungan water security dengan food & energy security</li>
                     </ul>
 
                     <h4>2. Pencerdasan Kritis (Critical Intelligence)</h4>
@@ -573,43 +817,40 @@
                     <p><strong>Gap Saat Ini:</strong> Mahasiswa menyadari dampak air kotor tetapi belum memahami sistem penyebab struktural.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
-                        <li>Menganalisis hubungan antara urbanisasi, deforestasi, dan krisis air</li>
-                        <li>Mengevaluasi kebijakan pemerintah dalam pengelolaan air (strengths & weaknesses)</li>
-                        <li>Mengidentifikasi konflik kepentingan dalam distribusi air (equity issues)</li>
+                        <li>Menganalisis hubungan urbanisasi, deforestasi, dan krisis air</li>
+                        <li>Mengevaluasi kebijakan pemerintah dalam pengelolaan air</li>
+                        <li>Mengidentifikasi konflik kepentingan dalam distribusi air</li>
                         <li>Memahami dampak perubahan iklim terhadap ketersediaan air</li>
                         <li>Mengkritisi model konsumsi air yang tidak berkelanjutan</li>
                     </ul>
 
                     <h4>3. Pencerdasan Emosional (Emotional Intelligence)</h4>
                     <p><strong>Definisi:</strong> Pengembangan empati, tanggung jawab moral, dan motivasi intrinsik untuk bertindak.</p>
-                    <p><strong>Gap Saat Ini:</strong> Kesadaran ada, tetapi belum terwujud dalam perubahan perilaku konsisten.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
                         <li>Mengembangkan empati terhadap komunitas yang mengalami krisis air</li>
                         <li>Membangun sense of urgency tanpa menimbulkan eco-anxiety</li>
-                        <li>Menumbuhkan rasa kepemilikan (ownership) terhadap sumber daya air</li>
-                        <li>Mengintegrasikan nilai-nilai keberlanjutan dalam identitas pribadi</li>
+                        <li>Menumbuhkan rasa kepemilikan terhadap sumber daya air</li>
+                        <li>Mengintegrasikan nilai keberlanjutan dalam identitas pribadi</li>
                     </ul>
 
                     <h4>4. Pencerdasan Praktikal (Practical Intelligence)</h4>
                     <p><strong>Definisi:</strong> Kompetensi dalam menerapkan pengetahuan menjadi tindakan konkret dan solusi inovatif.</p>
-                    <p><strong>Gap Saat Ini:</strong> Pengetahuan belum ditransformasi menjadi praktik hemat air yang konsisten.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
                         <li>Mampu menghitung dan memonitor personal water footprint</li>
                         <li>Menguasai teknik konservasi air (rainwater harvesting, greywater recycling)</li>
-                        <li>Dapat melakukan audit penggunaan air dan mengidentifikasi pemborosan</li>
-                        <li>Mampu mengadvokasi kebijakan kampus yang pro-water sustainability</li>
-                        <li>Mengembangkan inovasi teknologi sederhana untuk efisiensi air</li>
+                        <li>Dapat melakukan audit penggunaan air</li>
+                        <li>Mampu mengadvokasi kebijakan kampus pro-water sustainability</li>
+                        <li>Mengembangkan inovasi teknologi untuk efisiensi air</li>
                     </ul>
 
                     <h4>5. Pencerdasan Sosial (Social Intelligence)</h4>
                     <p><strong>Definisi:</strong> Kemampuan berkolaborasi, mengomunikasikan isu, dan memobilisasi aksi kolektif.</p>
-                    <p><strong>Gap Saat Ini:</strong> Isu air masih dipersepsikan sebagai tanggung jawab individual, bukan kolektif.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
                         <li>Mampu mengkomunikasikan isu water security secara persuasif</li>
-                        <li>Membangun komunitas praktik (community of practice) untuk water conservation</li>
+                        <li>Membangun komunitas praktik untuk water conservation</li>
                         <li>Mengorganisir kampanye dan gerakan sosial berbasis data</li>
                         <li>Berkolaborasi lintas disiplin untuk solusi holistik</li>
                     </ul>
@@ -617,33 +858,33 @@
 
                 <div class="insight-box">
                     <h3>🔬 Analisis Gap Pencerdasan</h3>
-                    <p><strong>Temuan Kritis:</strong> Terdapat kesenjangan 52% antara level pencerdasan saat ini (33%) dengan target optimal (85%). Kesenjangan ini mencakup:</p>
+                    <p><strong>Temuan Kritis:</strong> Terdapat kesenjangan 52% antara level saat ini (33%) dengan target optimal (85%).</p>
                     
                     <p><strong>Gap 1: Pengetahuan Teknis (67% tidak memahami)</strong></p>
                     <ul>
                         <li>Mayoritas mahasiswa tidak tahu tentang WTP di kampus</li>
-                        <li>Pemahaman tentang proses pengolahan air sangat terbatas</li>
-                        <li>Kurangnya eksposur terhadap teknologi water treatment</li>
+                        <li>Pemahaman proses pengolahan air sangat terbatas</li>
+                        <li>Kurang eksposur teknologi water treatment</li>
                     </ul>
 
-                    <p><strong>Gap 2: Kesadaran Sistemik (85% tidak mengetahui upaya institusional)</strong></p>
+                    <p><strong>Gap 2: Kesadaran Sistemik (85% tidak tahu upaya institusi)</strong></p>
                     <ul>
-                        <li>Mahasiswa tidak aware terhadap program kampus (water free refill, dll)</li>
+                        <li>Tidak aware program kampus (water free refill, dll)</li>
                         <li>Disconnect antara individu dengan kebijakan institusional</li>
-                        <li>Kurangnya transparansi informasi dari pihak kampus</li>
+                        <li>Kurangnya transparansi informasi dari kampus</li>
                     </ul>
 
-                    <p><strong>Gap 3: Transformasi Perilaku (Belum terukur)</strong></p>
+                    <p><strong>Gap 3: Transformasi Perilaku</strong></p>
                     <ul>
-                        <li>Pengetahuan belum ditranslasi menjadi habit perubahan</li>
-                        <li>Tidak ada mekanisme monitoring dan reinforcement</li>
-                        <li>Belum ada sistem insentif untuk perilaku berkelanjutan</li>
+                        <li>Pengetahuan belum jadi habit perubahan</li>
+                        <li>Tidak ada mekanisme monitoring</li>
+                        <li>Belum ada sistem insentif perilaku berkelanjutan</li>
                     </ul>
                 </div>
 
                 <div class="intelligence-box">
                     <h3>🎯 Framework Pencerdasan Holistik</h3>
-                    <p>Model pencerdasan yang efektif harus mengintegrasikan pendekatan multi-level:</p>
+                    <p>Model pencerdasan efektif harus mengintegrasikan pendekatan multi-level:</p>
                     
                     <p><strong>Level 1: Individual Intelligence</strong></p>
                     <ul>
@@ -670,4 +911,504 @@
 
             <!-- Tab: Intelligence Solutions -->
             <div id="solutions" class="tab-content">
-                <h2>💡 SOLUSI PENCERDASAN INOVATIF
+                <h2>💡 SOLUSI PENCERDASAN INOVATIF</h2>
+
+                <div class="highlight-box">
+                    <h3>🚀 Strategi Pencerdasan Berbasis Teknologi Digital</h3>
+                    <p>Memanfaatkan literasi digital mahasiswa tinggi (4.5/5) untuk akselerasi pencerdasan.</p>
+                </div>
+
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <span class="solution-icon">🌐</span>
+                        <div class="solution-title">1. Smart Water Intelligence Platform</div>
+                        <p><strong>Konsep:</strong> Website interaktif berbasis AI dengan fitur personalisasi pembelajaran</p>
+                        <p><strong>Fitur Unggulan:</strong></p>
+                        <ul>
+                            <li><strong>Virtual WTP Tour:</strong> Simulasi 3D proses pengolahan air</li>
+                            <li><strong>Water Footprint Calculator:</strong> Tool hitung jejak air personal</li>
+                            <li><strong>Real-time Dashboard:</strong> Monitoring kualitas air kampus live</li>
+                            <li><strong>Gamification:</strong> Badge system dan leaderboard</li>
+                            <li><strong>AI Chatbot:</strong> Asisten virtual 24/7</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Pemahaman 33% → 75% dalam 6 bulan</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">📱</span>
+                        <div class="solution-title">2. Micro-Learning Ecosystem</div>
+                        <p><strong>Konsep:</strong> Pembelajaran bite-sized melalui multiple channels</p>
+                        <p><strong>Implementasi:</strong></p>
+                        <ul>
+                            <li><strong>Daily Water Facts:</strong> Notifikasi fakta menarik (2-3 menit/hari)</li>
+                            <li><strong>Video Explainer Series:</strong> Animasi 3-5 menit</li>
+                            <li><strong>Infographic Repository:</strong> Library visual shareable</li>
+                            <li><strong>Podcast Episodes:</strong> Diskusi dengan ahli</li>
+                            <li><strong>Instagram Stories Quiz:</strong> Quiz interaktif viral</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Engagement 85% dengan retention 70%</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">🎮</span>
+                        <div class="solution-title">3. Serious Games for Water Education</div>
+                        <p><strong>Konsep:</strong> Game-based learning untuk experiential understanding</p>
+                        <p><strong>Game Modules:</strong></p>
+                        <ul>
+                            <li><strong>"Water Crisis Simulator":</strong> Simulasi kelola distribusi air</li>
+                            <li><strong>"Save the Source":</strong> Mission protect watershed</li>
+                            <li><strong>"Eco-Campus Challenge":</strong> Competition antar fakultas</li>
+                            <li><strong>"Water Detective":</strong> Investigasi water waste</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Transformasi dari passive ke active problem-solver</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">🔬</span>
+                        <div class="solution-title">4. Citizen Science Program</div>
+                        <p><strong>Konsep:</strong> Mahasiswa sebagai peneliti dan data collectors</p>
+                        <p><strong>Program Activities:</strong></p>
+                        <ul>
+                            <li><strong>Water Quality Testing:</strong> Training test pH, TDS, turbidity</li>
+                            <li><strong>Campus Water Mapping:</strong> Collaborative mapping water points</li>
+                            <li><strong>Consumption Audit:</strong> Monitoring usage patterns</li>
+                            <li><strong>Research Projects:</strong> Student-led mini research</li>
+                            <li><strong>Data Dashboard:</strong> Publikasi data monitoring</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Meningkatkan practical intelligence dan ownership</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">👥</span>
+                        <div class="solution-title">5. Peer-to-Peer Learning Network</div>
+                        <p><strong>Konsep:</strong> Membangun komunitas praktisi saling belajar</p>
+                        <p><strong>Structure:</strong></p>
+                        <ul>
+                            <li><strong>Water Champions:</strong> 50 mahasiswa sebagai ambassador</li>
+                            <li><strong>Learning Circles:</strong> Small group discussion 10-12 orang</li>
+                            <li><strong>Mentorship System:</strong> Senior mentor juniors</li>
+                            <li><strong>Knowledge Sharing:</strong> Monthly showcase projects</li>
+                            <li><strong>Online Forum:</strong> Digital space untuk Q&A</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Multiplier effect - 1 champion educates 20 peers</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">🏆</span>
+                        <div class="solution-title">6. Behavioral Nudge System</div>
+                        <p><strong>Konsep:</strong> Subtle interventions untuk trigger positive behavior</p>
+                        <p><strong>Interventions:</strong></p>
+                        <ul>
+                            <li><strong>Social Proof:</strong> Digital screens "X liters saved today"</li>
+                            <li><strong>Challenges:</strong> Monthly themed challenges dengan rewards</li>
+                            <li><strong>Visual Cues:</strong> Stickers di faucets dengan tips</li>
+                            <li><strong>Feedback Loops:</strong> Personal usage reports via email/app</li>
+                            <li><strong>Recognition:</strong> Public appreciation water-conscious individuals</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Reduce consumption 20-30%</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">🎓</span>
+                        <div class="solution-title">7. Curriculum Integration</div>
+                        <p><strong>Konsep:</strong> Embedding water literacy dalam academic programs</p>
+                        <p><strong>Implementation:</strong></p>
+                        <ul>
+                            <li><strong>Mandatory Workshop:</strong> 2-hour water literacy untuk TPB</li>
+                            <li><strong>Elective Courses:</strong> "Water Security & Sustainability"</li>
+                            <li><strong>Capstone Projects:</strong> Final projects address water issues</li>
+                            <li><strong>Field Trips:</strong> Kunjungan ke WTP, watershed</li>
+                            <li><strong>Guest Lectures:</strong> Water experts special sessions</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Institutional commitment long-term</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <span class="solution-icon">💰</span>
+                        <div class="solution-title">8. Innovation Fund & Competitions</div>
+                        <p><strong>Konsep:</strong> Stimulate creative solutions melalui kompetisi</p>
+                        <p><strong>Programs:</strong></p>
+                        <ul>
+                            <li><strong>Water Innovation Challenge:</strong> Annual competition best ideas</li>
+                            <li><strong>Seed Funding:</strong> Grant 5-15 juta untuk prototype</li>
+                            <li><strong>Hackathons:</strong> 48-hour intensive coding</li>
+                            <li><strong>Business Model Competition:</strong> Entrepreneurship water startups</li>
+                            <li><strong>Showcase Events:</strong> Demo day ke investors/government</li>
+                        </ul>
+                        <p><strong>Dampak:</strong> Generate 10-20 innovations per year</p>
+                    </div>
+                </div>
+
+                <div class="intelligence-box">
+                    <h3>🔄 Integrated Implementation Strategy</h3>
+                    <p><strong>Fase 1: Foundation (Bulan 1-3)</strong></p>
+                    <ul>
+                        <li>Launch Smart Water Intelligence Platform</li>
+                        <li>Rekrut dan training Water Champions</li>
+                        <li>Setup Citizen Science infrastructure</li>
+                        <li>Implementasi first behavioral nudges</li>
+                    </ul>
+
+                    <p><strong>Fase 2: Expansion (Bulan 4-6)</strong></p>
+                    <ul>
+                        <li>Roll out Serious Games dan Micro-Learning</li>
+                        <li>Launch first Innovation Challenge</li>
+                        <li>Establish Peer-to-Peer Learning Circles</li>
+                        <li>Integrate curriculum components</li>
+                    </ul>
+
+                    <p><strong>Fase 3: Scaling (Bulan 7-12)</strong></p>
+                    <ul>
+                        <li>Expand ke semua fakultas dan angkatan</li>
+                        <li>Advanced features (AI, predictive analytics)</li>
+                        <li>Regional collaboration kampus lain</li>
+                        <li>Policy advocacy berdasarkan data</li>
+                    </ul>
+
+                    <p><strong>Fase 4: Sustainability (Tahun 2+)</strong></p>
+                    <ul>
+                        <li>Institutionalization dalam policy kampus</li>
+                        <li>Self-sustaining peer education system</li>
+                        <li>Research publications</li>
+                        <li>Model replication institusi lain</li>
+                    </ul>
+                </div>
+
+                <div class="recommendation">
+                    <h3>📊 Monitoring & Evaluation Framework</h3>
+                    <p><strong>Key Performance Indicators (KPIs):</strong></p>
+                    
+                    <p><strong>Input Indicators:</strong></p>
+                    <ul>
+                        <li>Platform users & active engagement rate</li>
+                        <li>Participation rate (target: 60% mahasiswa)</li>
+                        <li>Resources invested (funding, HR, technology)</li>
+                    </ul>
+
+                    <p><strong>Output Indicators:</strong></p>
+                    <ul>
+                        <li>Knowledge gain: Pre-post test (33% → 75%)</li>
+                        <li>Awareness level survey results</li>
+                        <li>Number of certified water champions</li>
+                    </ul>
+
+                    <p><strong>Outcome Indicators:</strong></p>
+                    <ul>
+                        <li>Behavior change: Reduction water consumption</li>
+                        <li>Attitude shift: Environmental consciousness scores</li>
+                        <li>Innovations generated</li>
+                    </ul>
+
+                    <p><strong>Impact Indicators (Long-term):</strong></p>
+                    <ul>
+                        <li>Water security index improvement</li>
+                        <li>Policy changes adopted institusi</li>
+                        <li>Alumni advocacy in careers</li>
+                        <li>Broader societal influence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab: Data Visualization -->
+            <div id="visualization" class="tab-content">
+                <h2>📈 VISUALISASI DATA & INSIGHTS</h2>
+                
+                <div class="chart-container">
+                    <h4 style="text-align: center; color: #a8d5a3; margin-bottom: 15px;">Manfaat Air Bersih Menurut Mahasiswa</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="manfaatChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h4 style="text-align: center; color: #a8d5a3; margin-bottom: 15px;">Tingkat Kemudahan Akses Internet di ITB</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="internetChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h4 style="text-align: center; color: #a8d5a3; margin-bottom: 15px;">Pemahaman Penggunaan Gadget</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="gadgetChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h4 style="text-align: center; color: #a8d5a3; margin-bottom: 15px;">Pengetahuan tentang Pengelolaan Air di ITB</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="pengelolaanChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <h3>🔍 Key Insights dari Data</h3>
+                    <ul>
+                        <li><strong>100% mahasiswa</strong> menggunakan fasilitas air ITB - ketergantungan penuh pada sistem kampus</li>
+                        <li><strong>67% gap</strong> antara penggunaan dan pemahaman - critical opportunity untuk intervensi edukasi</li>
+                        <li><strong>Literasi digital tinggi (4.5/5)</strong> - readiness untuk digital-based education</li>
+                        <li><strong>Akses internet memadai (3.5/5)</strong> - mendukung online learning platform</li>
+                        <li><strong>85% tidak aware</strong> upaya institusional - perlu transparency improvement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab: Conclusion -->
+            <div id="conclusion" class="tab-content">
+                <h2>✅ KESIMPULAN & DAMPAK TRANSFORMATIF</h2>
+                
+                <div class="conclusion-summary">
+                    <h3 style="color: #a8d5a3;">KESIMPULAN UTAMA</h3>
+                    <p>Penelitian ini mengidentifikasi <strong>paradoks kritis</strong>: Meskipun mahasiswa ITB Jatinangor memiliki <strong>literasi digital tinggi (4.5/5)</strong> dan <strong>akses internet memadai (3.5/5)</strong>, hanya <strong>33%</strong> yang memahami sistem pengelolaan air di kampus mereka sendiri. Ini menunjukkan bahwa <strong>infrastruktur teknologi ada, tetapi konten edukatif yang tepat belum tersedia</strong>.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>🎯 Menjawab Rumusan Masalah</h3>
+                    
+                    <h4>1. Bagaimana pengelolaan air di ITB Jatinangor?</h4>
+                    <p><strong>Temuan:</strong></p>
+                    <ul>
+                        <li>ITB memiliki Water Treatment Plant (WTP) yang mengolah air untuk kampus</li>
+                        <li>Terdapat sistem water free refill di beberapa lokasi strategis</li>
+                        <li>Air yang dihasilkan layak untuk kegiatan sehari-hari mahasiswa</li>
+                        <li><strong>NAMUN:</strong> Mayoritas mahasiswa (67%) tidak mengetahui sistem ini - gap komunikasi signifikan</li>
+                    </ul>
+
+                    <h4>2. Bagaimana peran website interaktif sebagai media edukasi?</h4>
+                    <p><strong>Temuan:</strong></p>
+                    <ul>
+                        <li>Website interaktif adalah <strong>solusi optimal</strong> mengingat tingginya literasi digital mahasiswa</li>
+                        <li>Platform digital dapat menjembatani <strong>67% gap</strong> pengetahuan dengan cara engaging</li>
+                        <li>Fitur interaktif (simulasi, gamification, real-time data) sesuai learning style digital native</li>
+                        <li>Dapat diakses 24/7, mendukung self-paced learning</li>
+                        <li>Scalable dan cost-effective untuk reach ribuan mahasiswa</li>
+                    </ul>
+
+                    <h4>3. Bagaimana dampak edukasi melalui website interaktif?</h4>
+                    <p><strong>Dampak Proyeksi:</strong></p>
+                    <ul>
+                        <li><strong>Cognitive Impact:</strong> Meningkatkan pemahaman dari 33% → 75% dalam 6 bulan</li>
+                        <li><strong>Behavioral Impact:</strong> Estimasi reduction 20-30% dalam water consumption</li>
+                        <li><strong>Social Impact:</strong> Membentuk 50 Water Champions yang educate 20 peers (multiplier 1:20)</li>
+                        <li><strong>Institutional Impact:</strong> Data-driven policy recommendations</li>
+                        <li><strong>Long-term Impact:</strong> Generasi water-conscious professionals</li>
+                    </ul>
+                </div>
+
+                <div class="intelligence-box">
+                    <h3>🚀 Transformasi yang Diharapkan</h3>
+                    
+                    <p><strong>FROM: Passive Consumers → TO: Active Stewards</strong></p>
+                    <ul>
+                        <li>Dari pengguna tidak sadar → pengelola bertanggung jawab</li>
+                        <li>Dari ketidaktahuan → water literacy champions</li>
+                        <li>Dari perilaku konsumtif → praktik berkelanjutan</li>
+                        <li>Dari individu terisolasi → komunitas praktik kuat</li>
+                    </ul>
+
+                    <p><strong>Cascade Effect yang Diharapkan:</strong></p>
+                    <ul>
+                        <li><strong>Level 1:</strong> Mahasiswa mengurangi personal water footprint</li>
+                        <li><strong>Level 2:</strong> Membentuk social norm baru di kampus</li>
+                        <li><strong>Level 3:</strong> Influence keluarga dan komunitas asal</li>
+                        <li><strong>Level 4:</strong> Advocacy untuk policy changes</li>
+                        <li><strong>Level 5:</strong> Career paths yang water-conscious</li>
+                    </ul>
+                </div>
+
+                <div class="recommendation">
+                    <h3>💎 Nilai Tambah Penelitian Ini</h3>
+                    <ul>
+                        <li><strong>Evidence-based:</strong> Keputusan didasarkan pada data survei aktual</li>
+                        <li><strong>Context-specific:</strong> Solusi disesuaikan karakteristik mahasiswa ITB</li>
+                        <li><strong>Holistic approach:</strong> Mengintegrasikan cognitive, emotional, practical, social intelligence</li>
+                        <li><strong>Scalable model:</strong> Framework dapat diadopsi institusi lain</li>
+                        <li><strong>Sustainable design:</strong> Built-in mechanisms untuk long-term sustainability</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>🌊 Pesan Penutup</h3>
+                    <p style="font-size: 1.05em; line-height: 1.9;">Air bukan hanya <strong>H₂O</strong> - ia adalah kehidupan, kesehatan, ekonomi, dan masa depan. Penelitian ini membuktikan bahwa dengan <strong>strategi pencerdasan yang tepat</strong>, teknologi digital yang <strong>sudah ada</strong> di tangan mahasiswa, dan <strong>komitmen institusional</strong>, kita dapat mentransformasi 67% gap menjadi 85% water-literate generation.</p>
+                    
+                    <p style="font-size: 1.05em; line-height: 1.9; margin-top: 15px;">Website interaktif bukan sekadar tool informasi - ia adalah <strong>katalis perubahan</strong>, <strong>platform pemberdayaan</strong>, dan <strong>fondasi gerakan</strong> menuju water security yang berkelanjutan.</p>
+
+                    <p style="font-style: italic; text-align: center; font-size: 1.1em; margin-top: 25px; color: #a8d5a3; text-shadow: 0 0 10px rgba(168, 213, 163, 0.5);">"The future of water security lies not in technology alone, but in the intelligent minds who understand, care, and act."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-size: 1.05em; margin-bottom: 8px;">© 2025 Smart Water Intelligence System</p>
+        <p>Institut Teknologi Bandung - Kampus Jatinangor</p>
+        <p style="margin-top: 12px; font-size: 0.85em; opacity: 0.8;">Powered by Advanced Research & Digital Innovation</p>
+    </footer>
+
+    <script>
+        // Tab switching function with proper event handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabName = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and buttons
+                    document.querySelectorAll('.tab-content').forEach(tab => {
+                        tab.classList.remove('active');
+                    });
+                    document.querySelectorAll('.tab-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button and corresponding tab
+                    this.classList.add('active');
+                    document.getElementById(tabName).classList.add('active');
+                    
+                    // Scroll to top of section smoothly
+                    document.querySelector('.section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        });
+
+        // Chart color scheme - moss green theme
+        const chartColors = {
+            primary: 'rgba(75, 107, 68, 0.8)',
+            secondary: 'rgba(168, 213, 163, 0.8)',
+            tertiary: 'rgba(143, 184, 138, 0.8)',
+            accent1: 'rgba(200, 217, 197, 0.8)',
+            accent2: 'rgba(45, 66, 40, 0.8)',
+            border: '#4b6b44'
+        };
+
+        // Initialize charts when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chart 1: Manfaat Air Bersih
+            const ctx1 = document.getElementById('manfaatChart').getContext('2d');
+            new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['Makan & Minum', 'Mandi', 'Cuci Baju & Piring', 'Menyiram Tanaman', 'Cuci Kendaraan'],
+                    datasets: [{
+                        label: 'Jumlah Responden',
+                        data: [21, 21, 19, 12, 13],
+                        backgroundColor: [
+                            chartColors.primary,
+                            chartColors.secondary,
+                            chartColors.tertiary,
+                            chartColors.accent1,
+                            chartColors.accent2
+                        ],
+                        borderColor: chartColors.border,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 21,
+                            ticks: { stepSize: 3, color: '#8fb88a' },
+                            grid: { color: 'rgba(75, 107, 68, 0.2)' }
+                        },
+                        x: {
+                            ticks: { color: '#8fb88a' },
+                            grid: { color: 'rgba(75, 107, 68, 0.2)' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Total Responden: 21 Mahasiswa',
+                            color: '#a8d5a3'
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: Akses Internet
+            const ctx2 = document.getElementById('internetChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Sangat Mudah (5)', 'Mudah (4)', 'Cukup (3)', 'Kurang (2)'],
+                    datasets: [{
+                        data: [4, 7, 9, 1],
+                        backgroundColor: [
+                            chartColors.secondary,
+                            chartColors.primary,
+                            chartColors.tertiary,
+                            chartColors.accent2
+                        ],
+                        borderColor: '#0a0e0a',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#8fb88a', padding: 12 }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Rata-rata: 4.5/5 - Literasi Digital Sangat Tinggi',
+                            color: '#a8d5a3'
+                        }
+                    }
+                }
+            });
+
+            // Chart 4: Pengetahuan Pengelolaan
+            const ctx4 = document.getElementById('pengelolaanChart').getContext('2d');
+            new Chart(ctx4, {
+                type: 'bar',
+                data: {
+                    labels: ['Mengetahui WTP & Sistem', 'Tidak Mengetahui'],
+                    datasets: [{
+                        label: 'Jumlah Mahasiswa',
+                        data: [7, 14],
+                        backgroundColor: [
+                            chartColors.secondary,
+                            chartColors.accent2
+                        ],
+                        borderColor: chartColors.border,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 21,
+                            ticks: { stepSize: 3, color: '#8fb88a' },
+                            grid: { color: 'rgba(75, 107, 68, 0.2)' }
+                        },
+                        y: {
+                            ticks: { color: '#8fb88a' },
+                            grid: { color: 'rgba(75, 107, 68, 0.2)' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Gap Pengetahuan: 67% Tidak Memahami Sistem',
+                            color: '#a8d5a3'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
