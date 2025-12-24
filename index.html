@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Water Education System - ITB Jatinangor</title>
+    <title>Sistem Pendidikan Air Cerdas - ITB Jatinangor</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <style>
         * {
@@ -411,6 +411,192 @@
             border-radius: 20px 20px 0 0;
         }
 
+        /* Custom Icon System */
+        .custom-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(75, 107, 68, 0.3) 0%, rgba(168, 213, 163, 0.2) 100%);
+            border: 2px solid #4b6b44;
+            border-radius: 12px;
+            position: relative;
+            margin-right: 12px;
+            box-shadow: 0 0 20px rgba(75, 107, 68, 0.3);
+        }
+
+        .custom-icon::before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Water Drop Icon */
+        .icon-water::before {
+            background: radial-gradient(ellipse at 30% 30%, #a8d5a3, #4b6b44);
+            clip-path: path('M12 2C12 2 2 12 2 17C2 20.866 5.134 24 9 24C12.866 24 16 20.866 16 17C16 12 12 2 12 2Z');
+            transform: scale(1.2);
+        }
+
+        /* Chart/Stats Icon */
+        .icon-chart::before {
+            background: linear-gradient(135deg, #4b6b44 0%, #a8d5a3 50%, #4b6b44 100%);
+            clip-path: path('M3 3v16h16M7 13l4-4 3 3 5-5');
+            border: 2px solid #a8d5a3;
+            border-radius: 2px;
+            box-shadow: 
+                inset 3px 3px 0 rgba(168, 213, 163, 0.5),
+                0 0 15px rgba(75, 107, 68, 0.4);
+        }
+
+        /* Brain/Intelligence Icon */
+        .icon-brain::before {
+            background: radial-gradient(circle, #a8d5a3, #4b6b44);
+            clip-path: path('M12 3C7 3 3 6.5 3 11c0 2.5 1 4.5 2.5 6 .5.5.5 1.5 0 2-.5.5-1 1-1 2 0 1 1 2 2 2h11c1 0 2-1 2-2 0-1-.5-1.5-1-2-.5-.5-.5-1.5 0-2 1.5-1.5 2.5-3.5 2.5-6 0-4.5-4-8-9-8z');
+            transform: scale(1.1);
+        }
+
+        /* Lightbulb/Solution Icon */
+        .icon-bulb::before {
+            background: linear-gradient(180deg, #a8d5a3 0%, #4b6b44 70%);
+            clip-path: path('M12 2c-3.866 0-7 3.134-7 7 0 2.5 1.5 4.5 3 6v3c0 1 1 2 2 2h4c1 0 2-1 2-2v-3c1.5-1.5 3-3.5 3-6 0-3.866-3.134-7-7-7z');
+            transform: scale(1.15);
+        }
+
+        /* Checkmark/Success Icon */
+        .icon-check::before {
+            background: none;
+            border-left: 3px solid #a8d5a3;
+            border-bottom: 3px solid #a8d5a3;
+            width: 18px;
+            height: 10px;
+            transform: rotate(-45deg) translateY(-2px);
+            box-shadow: 0 0 10px rgba(168, 213, 163, 0.5);
+        }
+
+        /* Globe/Web Icon */
+        .icon-globe::before {
+            background: none;
+            border: 3px solid #a8d5a3;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            box-shadow: 
+                inset 0 0 10px rgba(168, 213, 163, 0.3),
+                0 0 15px rgba(75, 107, 68, 0.4);
+        }
+
+        .icon-globe::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: #a8d5a3;
+        }
+
+        /* Mobile/Phone Icon */
+        .icon-mobile::before {
+            background: linear-gradient(180deg, rgba(168, 213, 163, 0.3) 0%, rgba(75, 107, 68, 0.8) 100%);
+            border: 2px solid #a8d5a3;
+            border-radius: 4px;
+            width: 16px;
+            height: 24px;
+        }
+
+        /* Game Controller Icon */
+        .icon-game::before {
+            background: linear-gradient(135deg, #4b6b44, #a8d5a3);
+            border-radius: 8px;
+            width: 26px;
+            height: 18px;
+            box-shadow: 
+                inset 3px 3px 0 rgba(168, 213, 163, 0.5),
+                0 0 15px rgba(75, 107, 68, 0.4);
+        }
+
+       
+        /* Flask/Science Icon */
+        .icon-science::before {
+            background: linear-gradient(180deg, transparent 30%, rgba(168, 213, 163, 0.6) 30%, rgba(75, 107, 68, 0.8) 100%);
+            clip-path: path('M8 2v6l-4 8c-1 2 0 4 2 4h12c2 0 3-2 2-4l-4-8V2h-8z');
+            border: 2px solid #a8d5a3;
+            transform: scale(1.1);
+        }
+
+        /* People/Community Icon */
+        .icon-people::before {
+            background: radial-gradient(circle at 30% 30%, #a8d5a3, #4b6b44);
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            box-shadow: 
+                12px 0 0 0 rgba(168, 213, 163, 0.8),
+                6px 10px 0 0 rgba(75, 107, 68, 0.8),
+                0 0 15px rgba(75, 107, 68, 0.3);
+        }
+
+        /* Trophy/Award Icon */
+        .icon-trophy::before {
+            background: linear-gradient(180deg, #a8d5a3 0%, #4b6b44 70%);
+            clip-path: path('M6 3h12l-1 8c0 2-2 4-5 4s-5-2-5-4L6 3z M9 15h6v3H9v-3z M7 18h10v2H7v-2z');
+            transform: scale(1.05);
+        }
+
+        /* Book/Education Icon */
+        .icon-book::before {
+            background: linear-gradient(90deg, #4b6b44 0%, #4b6b44 48%, #a8d5a3 50%, #4b6b44 52%, #4b6b44 100%);
+            border: 2px solid #a8d5a3;
+            border-radius: 2px;
+            width: 20px;
+            height: 24px;
+            box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Money/Fund Icon */
+        .icon-money::before {
+            background: radial-gradient(circle, #a8d5a3, #4b6b44);
+            border: 2px solid #a8d5a3;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            box-shadow: 0 0 20px rgba(168, 213, 163, 0.4);
+        }
+
+        .icon-money::after {
+            content: '$';
+            position: absolute;
+            color: #0a0e0a;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 0 0 5px rgba(168, 213, 163, 0.5);
+        }
+
+        /* Small icon variant for inline use */
+        .custom-icon-sm {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        .custom-icon-sm::before {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Large icon variant for headers */
+        .custom-icon-lg {
+            width: 64px;
+            height: 64px;
+            margin-right: 16px;
+        }
+
+        .custom-icon-lg::before {
+            width: 32px;
+            height: 32px;
+        }
+
         /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
@@ -730,34 +916,34 @@
     
     <div class="container">
         <header>
-            <h1>💧 SMART WATER INTELLIGENCE SYSTEM</h1>
-            <p>Advanced Educational Platform for Sustainable Water Management</p>
-            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.8;">ITB Jatinangor Campus - Digital Transformation Initiative</p>
+            <h1><span class="custom-icon icon-water"></span> SISTEM INTELEJENSI AIR CERDAS</h1>
+            <p>Platform Pendidikan Lanjutan untuk Pengelolaan Air Berkelanjutan</p>
+            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.8;">Kampus ITB Jatinangor - Inisiatif Transformasi Digital</p>
         </header>
 
         <!-- Statistics Overview -->
         <div class="section">
-            <h2>📊 INTELLIGENCE METRICS OVERVIEW</h2>
+            <h2><span class="custom-icon icon-chart"></span> RINGKASAN METRIK INTELEJENSI</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-label">Total Respondents</div>
+                    <div class="stat-label">Total Responden</div>
                     <div class="stat-number">21</div>
-                    <div class="stat-label">S1 ITB Students</div>
+                    <div class="stat-label">Mahasiswa S1 ITB</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Water Facility Usage</div>
+                    <div class="stat-label">Penggunaan Fasilitas Air</div>
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">Active Users</div>
+                    <div class="stat-label">Pengguna Aktif</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Water Management Knowledge</div>
+                    <div class="stat-label">Pengetahuan Manajemen Air</div>
                     <div class="stat-number">33%</div>
-                    <div class="stat-label">Current Understanding</div>
+                    <div class="stat-label">Pemahaman Saat Ini</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Digital Literacy Score</div>
+                    <div class="stat-label">Skor Literasi Digital</div>
                     <div class="stat-number">4.5</div>
-                    <div class="stat-label">out of 5.0</div>
+                    <div class="stat-label">dari 5.0</div>
                 </div>
             </div>
         </div>
@@ -767,19 +953,19 @@
         <!-- Tab Navigation -->
         <div class="section">
             <div class="tab-container">
-                <button class="tab-btn active" data-tab="intelligence">🧠 PENCERDASAN</button>
-                <button class="tab-btn" data-tab="solutions">💡 SOLUSI</button>
-                <button class="tab-btn" data-tab="visualization">📈 VISUALISASI</button>
-                <button class="tab-btn" data-tab="conclusion">✅ KESIMPULAN</button>
+                <button class="tab-btn active" data-tab="intelligence"><span class="custom-icon icon-brain"></span> PENCERDASAN</button>
+                <button class="tab-btn" data-tab="solutions"><span class="custom-icon icon-bulb"></span> SOLUSI</button>
+                <button class="tab-btn" data-tab="visualization"><span class="custom-icon icon-chart"></span> VISUALISASI</button>
+                <button class="tab-btn" data-tab="conclusion"><span class="custom-icon icon-check"></span> KESIMPULAN</button>
             </div>
 
             <!-- Tab: Deep Intelligence Analysis -->
             <div id="intelligence" class="tab-content active">
-                <h2>🧠 ANALISIS PENCERDASAN MENDALAM</h2>
+                <h2><span class="custom-icon icon-brain"></span> ANALISIS PENCERDASAN MENDALAM</h2>
                 
                 <div class="intelligence-box">
-                    <h3>Konsep Pencerdasan dalam Konteks Water Security</h3>
-                    <p><strong>Pencerdasan (Intelligence Enhancement)</strong> adalah proses sistematis untuk meningkatkan kapasitas kognitif, kesadaran kritis, dan kompetensi praktis individu atau kelompok dalam memahami, menganalisis, dan merespons isu kompleks—dalam hal ini, pengelolaan air bersih dan ketahanan air.</p>
+                    <h3>Konsep Pencerdasan dalam Konteks Keamanan Air</h3>
+                    <p><strong>Pencerdasan (Peningkatan Intelegensi)</strong> adalah proses sistematis untuk meningkatkan kapasitas kognitif, kesadaran kritis, dan kompetensi praktis individu atau kelompok dalam memahami, menganalisis, dan merespons isu kompleks—dalam hal ini, pengelolaan air bersih dan ketahanan air.</p>
                     
                     <div class="intelligence-level">
                         <div class="level-label">Level Saat Ini:</div>
@@ -799,20 +985,20 @@
                 </div>
 
                 <div class="highlight-box">
-                    <h3>📚 Dimensi Pencerdasan Water Literacy</h3>
+                    <h3><span class="custom-icon icon-book"></span> Dimensi Pencerdasan Literasi Air</h3>
                     
-                    <h4>1. Pencerdasan Kognitif (Cognitive Intelligence)</h4>
+                    <h4>1. Pencerdasan Kognitif (Intelegensi Kognitif)</h4>
                     <p><strong>Definisi:</strong> Pemahaman mendalam tentang siklus air, sistem pengelolaan, teknologi pengolahan, dan dampak lingkungan.</p>
-                    <p><strong>Gap Saat Ini:</strong> Hanya 33% mahasiswa yang memahami sistem WTP (Water Treatment Plant) di ITB Jatinangor.</p>
+                    <p><strong>Gap Saat Ini:</strong> Hanya 33% mahasiswa yang memahami sistem IPAL (Instalasi Pengolahan Air Limbah) di ITB Jatinangor.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
-                        <li>Memahami proses koagulasi, flokulasi, sedimentasi, filtrasi, dan disinfeksi dalam WTP</li>
-                        <li>Mengerti parameter kualitas air (pH, TDS, turbidity, mikrobiologi)</li>
-                        <li>Menguasai konsep water footprint dan virtual water</li>
-                        <li>Memahami hubungan water security dengan food & energy security</li>
+                        <li>Memahami proses koagulasi, flokulasi, sedimentasi, filtrasi, dan disinfeksi dalam IPAL</li>
+                        <li>Mengerti parameter kualitas air (pH, TDS, kekeruhan, mikrobiologi)</li>
+                        <li>Menguasai konsep jejak air dan air virtual</li>
+                        <li>Memahami hubungan keamanan air dengan keamanan pangan & energi</li>
                     </ul>
 
-                    <h4>2. Pencerdasan Kritis (Critical Intelligence)</h4>
+                    <h4>2. Pencerdasan Kritis (Intelegensi Kritis)</h4>
                     <p><strong>Definisi:</strong> Kemampuan menganalisis isu keairan secara multidimensi dan mengidentifikasi akar permasalahan.</p>
                     <p><strong>Gap Saat Ini:</strong> Mahasiswa menyadari dampak air kotor tetapi belum memahami sistem penyebab struktural.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
@@ -824,294 +1010,294 @@
                         <li>Mengkritisi model konsumsi air yang tidak berkelanjutan</li>
                     </ul>
 
-                    <h4>3. Pencerdasan Emosional (Emotional Intelligence)</h4>
+                    <h4>3. Pencerdasan Emosional (Intelegensi Emosional)</h4>
                     <p><strong>Definisi:</strong> Pengembangan empati, tanggung jawab moral, dan motivasi intrinsik untuk bertindak.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
                         <li>Mengembangkan empati terhadap komunitas yang mengalami krisis air</li>
-                        <li>Membangun sense of urgency tanpa menimbulkan eco-anxiety</li>
+                        <li>Membangun rasa urgensi tanpa menimbulkan kecemasan ekologis</li>
                         <li>Menumbuhkan rasa kepemilikan terhadap sumber daya air</li>
                         <li>Mengintegrasikan nilai keberlanjutan dalam identitas pribadi</li>
                     </ul>
 
-                    <h4>4. Pencerdasan Praktikal (Practical Intelligence)</h4>
+                    <h4>4. Pencerdasan Praktikal (Intelegensi Praktikal)</h4>
                     <p><strong>Definisi:</strong> Kompetensi dalam menerapkan pengetahuan menjadi tindakan konkret dan solusi inovatif.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
-                        <li>Mampu menghitung dan memonitor personal water footprint</li>
-                        <li>Menguasai teknik konservasi air (rainwater harvesting, greywater recycling)</li>
+                        <li>Mampu menghitung dan memonitor jejak air pribadi</li>
+                        <li>Menguasai teknik konservasi air (panen air hujan, daur ulang air limbah)</li>
                         <li>Dapat melakukan audit penggunaan air</li>
-                        <li>Mampu mengadvokasi kebijakan kampus pro-water sustainability</li>
+                        <li>Mampu mengadvokasi kebijakan kampus pro-keberlanjutan air</li>
                         <li>Mengembangkan inovasi teknologi untuk efisiensi air</li>
                     </ul>
 
-                    <h4>5. Pencerdasan Sosial (Social Intelligence)</h4>
+                    <h4>5. Pencerdasan Sosial (Intelegensi Sosial)</h4>
                     <p><strong>Definisi:</strong> Kemampuan berkolaborasi, mengomunikasikan isu, dan memobilisasi aksi kolektif.</p>
                     <p><strong>Target Pencerdasan:</strong></p>
                     <ul>
-                        <li>Mampu mengkomunikasikan isu water security secara persuasif</li>
-                        <li>Membangun komunitas praktik untuk water conservation</li>
+                        <li>Mampu mengkomunikasikan isu keamanan air secara persuasif</li>
+                        <li>Membangun komunitas praktik untuk konservasi air</li>
                         <li>Mengorganisir kampanye dan gerakan sosial berbasis data</li>
                         <li>Berkolaborasi lintas disiplin untuk solusi holistik</li>
                     </ul>
                 </div>
 
                 <div class="insight-box">
-                    <h3>🔬 Analisis Gap Pencerdasan</h3>
+                    <h3><span class="custom-icon icon-science"></span> Analisis Gap Pencerdasan</h3>
                     <p><strong>Temuan Kritis:</strong> Terdapat kesenjangan 52% antara level saat ini (33%) dengan target optimal (85%).</p>
                     
                     <p><strong>Gap 1: Pengetahuan Teknis (67% tidak memahami)</strong></p>
                     <ul>
-                        <li>Mayoritas mahasiswa tidak tahu tentang WTP di kampus</li>
+                        <li>Mayoritas mahasiswa tidak tahu tentang IPAL di kampus</li>
                         <li>Pemahaman proses pengolahan air sangat terbatas</li>
-                        <li>Kurang eksposur teknologi water treatment</li>
+                        <li>Kurang paparan teknologi pengolahan air</li>
                     </ul>
 
                     <p><strong>Gap 2: Kesadaran Sistemik (85% tidak tahu upaya institusi)</strong></p>
                     <ul>
-                        <li>Tidak aware program kampus (water free refill, dll)</li>
-                        <li>Disconnect antara individu dengan kebijakan institusional</li>
+                        <li>Tidak mengetahui program kampus (isi ulang air gratis, dll)</li>
+                        <li>Tidak ada hubungan antara individu dengan kebijakan institusional</li>
                         <li>Kurangnya transparansi informasi dari kampus</li>
                     </ul>
 
                     <p><strong>Gap 3: Transformasi Perilaku</strong></p>
                     <ul>
-                        <li>Pengetahuan belum jadi habit perubahan</li>
-                        <li>Tidak ada mekanisme monitoring</li>
+                        <li>Pengetahuan belum menjadi kebiasaan perubahan</li>
+                        <li>Tidak ada mekanisme pemantauan</li>
                         <li>Belum ada sistem insentif perilaku berkelanjutan</li>
                     </ul>
                 </div>
 
                 <div class="intelligence-box">
-                    <h3>🎯 Framework Pencerdasan Holistik</h3>
+                    <h3><span class="custom-icon icon-check"></span> Kerangka Pencerdasan Holistik</h3>
                     <p>Model pencerdasan efektif harus mengintegrasikan pendekatan multi-level:</p>
                     
-                    <p><strong>Level 1: Individual Intelligence</strong></p>
+                    <p><strong>Level 1: Intelegensi Individu</strong></p>
                     <ul>
-                        <li>Self-awareness tentang water consumption patterns</li>
-                        <li>Personal commitment untuk behavior change</li>
-                        <li>Continuous learning dan skill development</li>
+                        <li>Kesadaran diri tentang pola konsumsi air</li>
+                        <li>Komitmen pribadi untuk perubahan perilaku</li>
+                        <li>Pembelajaran berkelanjutan dan pengembangan keterampilan</li>
                     </ul>
 
-                    <p><strong>Level 2: Collective Intelligence</strong></p>
+                    <p><strong>Level 2: Intelegensi Kolektif</strong></p>
                     <ul>
-                        <li>Peer learning dan knowledge sharing</li>
-                        <li>Community-based monitoring dan accountability</li>
-                        <li>Collaborative problem-solving</li>
+                        <li>Pembelajaran sejawat dan berbagi pengetahuan</li>
+                        <li>Pemantauan dan akuntabilitas berbasis komunitas</li>
+                        <li>Pemecahan masalah kolaboratif</li>
                     </ul>
 
-                    <p><strong>Level 3: Systemic Intelligence</strong></p>
+                    <p><strong>Level 3: Intelegensi Sistemik</strong></p>
                     <ul>
-                        <li>Memahami interconnection antar sistem (water, energy, food)</li>
-                        <li>Thinking in feedback loops dan long-term consequences</li>
-                        <li>Policy literacy dan advocacy capability</li>
+                        <li>Memahami interkoneksi antar sistem (air, energi, pangan)</li>
+                        <li>Berpikir dalam umpan balik dan konsekuensi jangka panjang</li>
+                        <li>Literasi kebijakan dan kemampuan advokasi</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Tab: Intelligence Solutions -->
             <div id="solutions" class="tab-content">
-                <h2>💡 SOLUSI PENCERDASAN INOVATIF</h2>
+                <h2><span class="custom-icon icon-bulb"></span> SOLUSI PENCERDASAN INOVATIF</h2>
 
                 <div class="highlight-box">
-                    <h3>🚀 Strategi Pencerdasan Berbasis Teknologi Digital</h3>
+                    <h3><span class="custom-icon icon-bulb"></span> Strategi Pencerdasan Berbasis Teknologi Digital</h3>
                     <p>Memanfaatkan literasi digital mahasiswa tinggi (4.5/5) untuk akselerasi pencerdasan.</p>
                 </div>
 
                 <div class="solution-grid">
                     <div class="solution-card">
-                        <span class="solution-icon">🌐</span>
-                        <div class="solution-title">1. Smart Water Intelligence Platform</div>
+                        <span class="custom-icon icon-globe"></span>
+                        <div class="solution-title">1. Platform Intelegensi Air Cerdas</div>
                         <p><strong>Konsep:</strong> Website interaktif berbasis AI dengan fitur personalisasi pembelajaran</p>
                         <p><strong>Fitur Unggulan:</strong></p>
                         <ul>
-                            <li><strong>Virtual WTP Tour:</strong> Simulasi 3D proses pengolahan air</li>
-                            <li><strong>Water Footprint Calculator:</strong> Tool hitung jejak air personal</li>
-                            <li><strong>Real-time Dashboard:</strong> Monitoring kualitas air kampus live</li>
-                            <li><strong>Gamification:</strong> Badge system dan leaderboard</li>
-                            <li><strong>AI Chatbot:</strong> Asisten virtual 24/7</li>
+                            <li><strong>Tur Virtual IPAL:</strong> Simulasi 3D proses pengolahan air</li>
+                            <li><strong>Kalkulator Jejak Air:</strong> Alat hitung jejak air pribadi</li>
+                            <li><strong>Dashboard Real-time:</strong> Pemantauan kualitas air kampus langsung</li>
+                            <li><strong>Gamifikasi:</strong> Sistem lencana dan papan peringkat</li>
+                            <li><strong>Asisten AI:</strong> Asisten virtual 24/7</li>
                         </ul>
                         <p><strong>Dampak:</strong> Pemahaman 33% → 75% dalam 6 bulan</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">📱</span>
-                        <div class="solution-title">2. Micro-Learning Ecosystem</div>
-                        <p><strong>Konsep:</strong> Pembelajaran bite-sized melalui multiple channels</p>
+                        <span class="custom-icon icon-mobile"></span>
+                        <div class="solution-title">2. Ekosistem Pembelajaran Mikro</div>
+                        <p><strong>Konsep:</strong> Pembelajaran berukuran kecil melalui berbagai saluran</p>
                         <p><strong>Implementasi:</strong></p>
                         <ul>
-                            <li><strong>Daily Water Facts:</strong> Notifikasi fakta menarik (2-3 menit/hari)</li>
-                            <li><strong>Video Explainer Series:</strong> Animasi 3-5 menit</li>
-                            <li><strong>Infographic Repository:</strong> Library visual shareable</li>
-                            <li><strong>Podcast Episodes:</strong> Diskusi dengan ahli</li>
-                            <li><strong>Instagram Stories Quiz:</strong> Quiz interaktif viral</li>
+                            <li><strong>Fakta Air Harian:</strong> Notifikasi fakta menarik (2-3 menit/hari)</li>
+                            <li><strong>Seri Video Penjelas:</strong> Animasi 3-5 menit</li>
+                            <li><strong>Repositori Infografis:</strong> Perpustakaan visual dapat dibagikan</li>
+                            <li><strong>Episode Podcast:</strong> Diskusi dengan ahli</li>
+                            <li><strong>Kuis Instagram Stories:</strong> Kuis interaktif viral</li>
                         </ul>
                         <p><strong>Dampak:</strong> Engagement 85% dengan retention 70%</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">🎮</span>
-                        <div class="solution-title">3. Serious Games for Water Education</div>
-                        <p><strong>Konsep:</strong> Game-based learning untuk experiential understanding</p>
-                        <p><strong>Game Modules:</strong></p>
+                        <span class="custom-icon icon-game"></span>
+                        <div class="solution-title">3. Game Serius untuk Pendidikan Air</div>
+                        <p><strong>Konsep:</strong> Pembelajaran berbasis game untuk pemahaman eksperimental</p>
+                        <p><strong>Modul Game:</strong></p>
                         <ul>
-                            <li><strong>"Water Crisis Simulator":</strong> Simulasi kelola distribusi air</li>
-                            <li><strong>"Save the Source":</strong> Mission protect watershed</li>
-                            <li><strong>"Eco-Campus Challenge":</strong> Competition antar fakultas</li>
-                            <li><strong>"Water Detective":</strong> Investigasi water waste</li>
+                            <li><strong>"Simulator Krisis Air":</strong> Simulasi kelola distribusi air</li>
+                            <li><strong>"Selamatkan Sumber":</strong> Misi lindungi daerah aliran sungai</li>
+                            <li><strong>"Tantangan Kampus Hijau":</strong> Kompetisi antar fakultas</li>
+                            <li><strong>"Detektif Air":</strong> Investigasi pemborosan air</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Transformasi dari passive ke active problem-solver</p>
+                        <p><strong>Dampak:</strong> Transformasi dari pasif ke pemecah masalah aktif</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">🔬</span>
-                        <div class="solution-title">4. Citizen Science Program</div>
-                        <p><strong>Konsep:</strong> Mahasiswa sebagai peneliti dan data collectors</p>
-                        <p><strong>Program Activities:</strong></p>
+                        <span class="custom-icon icon-science"></span>
+                        <div class="solution-title">4. Program Sains Warga</div>
+                        <p><strong>Konsep:</strong> Mahasiswa sebagai peneliti dan pengumpul data</p>
+                        <p><strong>Aktivitas Program:</strong></p>
                         <ul>
-                            <li><strong>Water Quality Testing:</strong> Training test pH, TDS, turbidity</li>
-                            <li><strong>Campus Water Mapping:</strong> Collaborative mapping water points</li>
-                            <li><strong>Consumption Audit:</strong> Monitoring usage patterns</li>
-                            <li><strong>Research Projects:</strong> Student-led mini research</li>
-                            <li><strong>Data Dashboard:</strong> Publikasi data monitoring</li>
+                            <li><strong>Uji Kualitas Air:</strong> Pelatihan tes pH, TDS, kekeruhan</li>
+                            <li><strong>Pemetaan Air Kampus:</strong> Pemetaan kolaboratif titik-titik air</li>
+                            <li><strong>Audit Konsumsi:</strong> Pemantauan pola penggunaan</li>
+                            <li><strong>Proyek Riset:</strong> Riset mini yang dipimpin mahasiswa</li>
+                            <li><strong>Dashboard Data:</strong> Publikasi data pemantauan</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Meningkatkan practical intelligence dan ownership</p>
+                        <p><strong>Dampak:</strong> Meningkatkan intelegensi praktikal dan rasa kepemilikan</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">👥</span>
-                        <div class="solution-title">5. Peer-to-Peer Learning Network</div>
+                        <span class="custom-icon icon-people"></span>
+                        <div class="solution-title">5. Jaringan Pembelajaran Antar Teman</div>
                         <p><strong>Konsep:</strong> Membangun komunitas praktisi saling belajar</p>
-                        <p><strong>Structure:</strong></p>
+                        <p><strong>Struktur:</strong></p>
                         <ul>
-                            <li><strong>Water Champions:</strong> 50 mahasiswa sebagai ambassador</li>
-                            <li><strong>Learning Circles:</strong> Small group discussion 10-12 orang</li>
-                            <li><strong>Mentorship System:</strong> Senior mentor juniors</li>
-                            <li><strong>Knowledge Sharing:</strong> Monthly showcase projects</li>
-                            <li><strong>Online Forum:</strong> Digital space untuk Q&A</li>
+                            <li><strong>Juara Air:</strong> 50 mahasiswa sebagai duta</li>
+                            <li><strong>Lingkaran Belajar:</strong> Diskusi kelompok kecil 10-12 orang</li>
+                            <li><strong>Sistem Mentorship:</strong> Senior mentor junior</li>
+                            <li><strong>Berbagi Pengetahuan:</strong> Pameran proyek bulanan</li>
+                            <li><strong>Forum Online:</strong> Ruang digital untuk T&amp;J</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Multiplier effect - 1 champion educates 20 peers</p>
+                        <p><strong>Dampak:</strong> Efek pengganda - 1 duta mendidik 20 rekan</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">🏆</span>
-                        <div class="solution-title">6. Behavioral Nudge System</div>
-                        <p><strong>Konsep:</strong> Subtle interventions untuk trigger positive behavior</p>
-                        <p><strong>Interventions:</strong></p>
+                        <span class="custom-icon icon-trophy"></span>
+                        <div class="solution-title">6. Sistem Desakan Perilaku</div>
+                        <p><strong>Konsep:</strong> Intervensi halus untuk memicu perilaku positif</p>
+                        <p><strong>Intervensi:</strong></p>
                         <ul>
-                            <li><strong>Social Proof:</strong> Digital screens "X liters saved today"</li>
-                            <li><strong>Challenges:</strong> Monthly themed challenges dengan rewards</li>
-                            <li><strong>Visual Cues:</strong> Stickers di faucets dengan tips</li>
-                            <li><strong>Feedback Loops:</strong> Personal usage reports via email/app</li>
-                            <li><strong>Recognition:</strong> Public appreciation water-conscious individuals</li>
+                            <li><strong>Bukti Sosial:</strong> Layar digital "X liter hemat hari ini"</li>
+                            <li><strong>Tantangan:</strong> Tantangan tematik bulanan dengan hadiah</li>
+                            <li><strong>Arah Visual:</strong> Stiker di keran dengan tips</li>
+                            <li><strong>Umpan Balik:</strong> Laporan penggunaan pribadi via email/aplikasi</li>
+                            <li><strong>Pengakuan:</strong> Apresiasi publik individu sadar air</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Reduce consumption 20-30%</p>
+                        <p><strong>Dampak:</strong> Kurangi konsumsi 20-30%</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">🎓</span>
-                        <div class="solution-title">7. Curriculum Integration</div>
-                        <p><strong>Konsep:</strong> Embedding water literacy dalam academic programs</p>
-                        <p><strong>Implementation:</strong></p>
+                        <span class="custom-icon icon-book"></span>
+                        <div class="solution-title">7. Integrasi Kurikulum</div>
+                        <p><strong>Konsep:</strong> Menanamkan literasi air dalam program akademik</p>
+                        <p><strong>Implementasi:</strong></p>
                         <ul>
-                            <li><strong>Mandatory Workshop:</strong> 2-hour water literacy untuk TPB</li>
-                            <li><strong>Elective Courses:</strong> "Water Security & Sustainability"</li>
-                            <li><strong>Capstone Projects:</strong> Final projects address water issues</li>
-                            <li><strong>Field Trips:</strong> Kunjungan ke WTP, watershed</li>
-                            <li><strong>Guest Lectures:</strong> Water experts special sessions</li>
+                            <li><strong>Workshop Wajib:</strong> Literasi air 2 jam untuk TPB</li>
+                            <li><strong>Mata Kuliah Pilihan:</strong> "Keamanan & Keberlanjutan Air"</li>
+                            <li><strong>Proyek Capstone:</strong> Proyek akhir bahas isu air</li>
+                            <li><strong>Kunjungan Lapangan:</strong> Kunjungan ke IPAL, daerah aliran sungai</li>
+                            <li><strong>Kuliah Tamu:</strong> Sesi khusus ahli air</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Institutional commitment long-term</p>
+                        <p><strong>Dampak:</strong> Komitmen institusional jangka panjang</p>
                     </div>
 
                     <div class="solution-card">
-                        <span class="solution-icon">💰</span>
-                        <div class="solution-title">8. Innovation Fund & Competitions</div>
-                        <p><strong>Konsep:</strong> Stimulate creative solutions melalui kompetisi</p>
-                        <p><strong>Programs:</strong></p>
+                        <span class="custom-icon icon-money"></span>
+                        <div class="solution-title">8. Dana Inovasi & Kompetisi</div>
+                        <p><strong>Konsep:</strong> Merangsang solusi kreatif melalui kompetisi</p>
+                        <p><strong>Program:</strong></p>
                         <ul>
-                            <li><strong>Water Innovation Challenge:</strong> Annual competition best ideas</li>
-                            <li><strong>Seed Funding:</strong> Grant 5-15 juta untuk prototype</li>
-                            <li><strong>Hackathons:</strong> 48-hour intensive coding</li>
-                            <li><strong>Business Model Competition:</strong> Entrepreneurship water startups</li>
-                            <li><strong>Showcase Events:</strong> Demo day ke investors/government</li>
+                            <li><strong>Tantangan Inovasi Air:</strong> Kompetisi tahunan ide terbaik</li>
+                            <li><strong>Dana Benih:</strong> Hibah 5-15 juta untuk prototipe</li>
+                            <li><strong>Hackathon:</strong> Koding intensif 48 jam</li>
+                            <li><strong>Kompetisi Model Bisnis:</strong> Kewirausahaan startup air</li>
+                            <li><strong>Acara Pameran:</strong> Hari demo ke investor/pemerintah</li>
                         </ul>
-                        <p><strong>Dampak:</strong> Generate 10-20 innovations per year</p>
+                        <p><strong>Dampak:</strong> Hasilkan 10-20 inovasi per tahun</p>
                     </div>
                 </div>
 
                 <div class="intelligence-box">
-                    <h3>🔄 Integrated Implementation Strategy</h3>
-                    <p><strong>Fase 1: Foundation (Bulan 1-3)</strong></p>
+                    <h3><span class="custom-icon icon-check"></span> Strategi Implementasi Terintegrasi</h3>
+                    <p><strong>Fase 1: Fondasi (Bulan 1-3)</strong></p>
                     <ul>
-                        <li>Launch Smart Water Intelligence Platform</li>
-                        <li>Rekrut dan training Water Champions</li>
-                        <li>Setup Citizen Science infrastructure</li>
-                        <li>Implementasi first behavioral nudges</li>
+                        <li>Luncurkan Platform Intelegensi Air Cerdas</li>
+                        <li>Rekrut dan latih Juara Air</li>
+                        <li>Siapkan infrastruktur Sains Warga</li>
+                        <li>Implementasi desakan perilaku pertama</li>
                     </ul>
 
-                    <p><strong>Fase 2: Expansion (Bulan 4-6)</strong></p>
+                    <p><strong>Fase 2: Ekspansi (Bulan 4-6)</strong></p>
                     <ul>
-                        <li>Roll out Serious Games dan Micro-Learning</li>
-                        <li>Launch first Innovation Challenge</li>
-                        <li>Establish Peer-to-Peer Learning Circles</li>
-                        <li>Integrate curriculum components</li>
+                        <li>Sebarkan Game Serius dan Pembelajaran Mikro</li>
+                        <li>Luncurkan Tantangan Inovasi pertama</li>
+                        <li>Didirikan Lingkaran Belajar Antar Teman</li>
+                        <li>Integrasikan komponen kurikulum</li>
                     </ul>
 
-                    <p><strong>Fase 3: Scaling (Bulan 7-12)</strong></p>
+                    <p><strong>Fase 3: Skalasi (Bulan 7-12)</strong></p>
                     <ul>
-                        <li>Expand ke semua fakultas dan angkatan</li>
-                        <li>Advanced features (AI, predictive analytics)</li>
-                        <li>Regional collaboration kampus lain</li>
-                        <li>Policy advocacy berdasarkan data</li>
+                        <li>Ekspansi ke semua fakultas dan angkatan</li>
+                        <li>Fitur lanjutan (AI, analitik prediktif)</li>
+                        <li>Kolaborasi regional kampus lain</li>
+                        <li>Advokasi kebijakan berbasis data</li>
                     </ul>
 
-                    <p><strong>Fase 4: Sustainability (Tahun 2+)</strong></p>
+                    <p><strong>Fase 4: Keberlanjutan (Tahun 2+)</strong></p>
                     <ul>
-                        <li>Institutionalization dalam policy kampus</li>
-                        <li>Self-sustaining peer education system</li>
-                        <li>Research publications</li>
-                        <li>Model replication institusi lain</li>
+                        <li>Institusionalisasi dalam kebijakan kampus</li>
+                        <li>Sistem pendidikan sejawat yang mandiri</li>
+                        <li>Publikasi riset</li>
+                        <li>Replikasi model institusi lain</li>
                     </ul>
                 </div>
 
                 <div class="recommendation">
-                    <h3>📊 Monitoring & Evaluation Framework</h3>
-                    <p><strong>Key Performance Indicators (KPIs):</strong></p>
+                    <h3><span class="custom-icon icon-chart"></span> Kerangka Pemantauan & Evaluasi</h3>
+                    <p><strong>Indikator Kinerja Kunci (KPIs):</strong></p>
                     
-                    <p><strong>Input Indicators:</strong></p>
+                    <p><strong>Indikator Input:</strong></p>
                     <ul>
-                        <li>Platform users & active engagement rate</li>
-                        <li>Participation rate (target: 60% mahasiswa)</li>
-                        <li>Resources invested (funding, HR, technology)</li>
+                        <li>Pengguna platform & tingkat keterlibatan aktif</li>
+                        <li>Tingkat partisipasi (target: 60% mahasiswa)</li>
+                        <li>Sumber daya yang diinvestasikan (pendanaan, SDM, teknologi)</li>
                     </ul>
 
-                    <p><strong>Output Indicators:</strong></p>
+                    <p><strong>Indikator Output:</strong></p>
                     <ul>
-                        <li>Knowledge gain: Pre-post test (33% → 75%)</li>
-                        <li>Awareness level survey results</li>
-                        <li>Number of certified water champions</li>
+                        <li>Peningkatan pengetahuan: Tes pra-pasca (33% → 75%)</li>
+                        <li>Hasil survei tingkat kesadaran</li>
+                        <li>Jumlah juara air tersertifikasi</li>
                     </ul>
 
-                    <p><strong>Outcome Indicators:</strong></p>
+                    <p><strong>Indikator Hasil:</strong></p>
                     <ul>
-                        <li>Behavior change: Reduction water consumption</li>
-                        <li>Attitude shift: Environmental consciousness scores</li>
-                        <li>Innovations generated</li>
+                        <li>Perubahan perilaku: Pengurangan konsumsi air</li>
+                        <li>Perubahan sikap: Skor kesadaran lingkungan</li>
+                        <li>Inovasi yang dihasilkan</li>
                     </ul>
 
-                    <p><strong>Impact Indicators (Long-term):</strong></p>
+                    <p><strong>Indikator Dampak (Jangka Panjang):</strong></p>
                     <ul>
-                        <li>Water security index improvement</li>
-                        <li>Policy changes adopted institusi</li>
-                        <li>Alumni advocacy in careers</li>
-                        <li>Broader societal influence</li>
+                        <li>Peningkatan indeks keamanan air</li>
+                        <li>Perubahan kebijakan yang diadopsi institusi</li>
+                        <li>Advokasi alumni dalam karir</li>
+                        <li>Pengaruh sosial yang lebih luas</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Tab: Data Visualization -->
             <div id="visualization" class="tab-content">
-                <h2>📈 VISUALISASI DATA & INSIGHTS</h2>
+                <h2><span class="custom-icon icon-chart"></span> VISUALISASI DATA & WAWASAN</h2>
                 
                 <div class="chart-container">
                     <h4 style="text-align: center; color: #a8d5a3; margin-bottom: 15px;">Manfaat Air Bersih Menurut Mahasiswa</h4>
@@ -1142,20 +1328,20 @@
                 </div>
 
                 <div class="insight-box">
-                    <h3>🔍 Key Insights dari Data</h3>
+                    <h3><span class="custom-icon icon-science"></span> Wawasan Kunci dari Data</h3>
                     <ul>
                         <li><strong>100% mahasiswa</strong> menggunakan fasilitas air ITB - ketergantungan penuh pada sistem kampus</li>
-                        <li><strong>67% gap</strong> antara penggunaan dan pemahaman - critical opportunity untuk intervensi edukasi</li>
-                        <li><strong>Literasi digital tinggi (4.5/5)</strong> - readiness untuk digital-based education</li>
-                        <li><strong>Akses internet memadai (3.5/5)</strong> - mendukung online learning platform</li>
-                        <li><strong>85% tidak aware</strong> upaya institusional - perlu transparency improvement</li>
+                        <li><strong>Gap 67%</strong> antara penggunaan dan pemahaman - kesempatan kritis untuk intervensi edukasi</li>
+                        <li><strong>Literasi digital tinggi (4.5/5)</strong> - kesiapan untuk pendidikan berbasis digital</li>
+                        <li><strong>Akses internet memadai (3.5/5)</strong> - mendukung platform pembelajaran online</li>
+                        <li><strong>85% tidak mengetahui</strong> upaya institusional - perlu perbaikan transparansi</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Tab: Conclusion -->
             <div id="conclusion" class="tab-content">
-                <h2>✅ KESIMPULAN & DAMPAK TRANSFORMATIF</h2>
+                <h2><span class="custom-icon icon-check"></span> KESIMPULAN & DAMPAK TRANSFORMATIF</h2>
                 
                 <div class="conclusion-summary">
                     <h3 style="color: #a8d5a3;">KESIMPULAN UTAMA</h3>
@@ -1163,55 +1349,55 @@
                 </div>
 
                 <div class="highlight-box">
-                    <h3>🎯 Menjawab Rumusan Masalah</h3>
+                    <h3><span class="custom-icon icon-check"></span> Menjawab Rumusan Masalah</h3>
                     
                     <h4>1. Bagaimana pengelolaan air di ITB Jatinangor?</h4>
                     <p><strong>Temuan:</strong></p>
                     <ul>
-                        <li>ITB memiliki Water Treatment Plant (WTP) yang mengolah air untuk kampus</li>
-                        <li>Terdapat sistem water free refill di beberapa lokasi strategis</li>
+                        <li>ITB memiliki Instalasi Pengolahan Air Limbah (IPAL) yang mengolah air untuk kampus</li>
+                        <li>Terdapat sistem isi ulang air gratis di beberapa lokasi strategis</li>
                         <li>Air yang dihasilkan layak untuk kegiatan sehari-hari mahasiswa</li>
-                        <li><strong>NAMUN:</strong> Mayoritas mahasiswa (67%) tidak mengetahui sistem ini - gap komunikasi signifikan</li>
+                        <li><strong>NAMUN:</strong> Mayoritas mahasiswa (67%) tidak mengetahui sistem ini - kesenjangan komunikasi signifikan</li>
                     </ul>
 
                     <h4>2. Bagaimana peran website interaktif sebagai media edukasi?</h4>
                     <p><strong>Temuan:</strong></p>
                     <ul>
                         <li>Website interaktif adalah <strong>solusi optimal</strong> mengingat tingginya literasi digital mahasiswa</li>
-                        <li>Platform digital dapat menjembatani <strong>67% gap</strong> pengetahuan dengan cara engaging</li>
-                        <li>Fitur interaktif (simulasi, gamification, real-time data) sesuai learning style digital native</li>
-                        <li>Dapat diakses 24/7, mendukung self-paced learning</li>
-                        <li>Scalable dan cost-effective untuk reach ribuan mahasiswa</li>
+                        <li>Platform digital dapat menjembatani <strong>kesenjangan 67%</strong> pengetahuan dengan cara engaging</li>
+                        <li>Fitur interaktif (simulasi, gamifikasi, data real-time) sesuai gaya belajar digital native</li>
+                        <li>Dapat diakses 24/7, mendukung pembelajaran mandiri</li>
+                        <li>Skalabel dan hemat biaya untuk menjangkau ribuan mahasiswa</li>
                     </ul>
 
                     <h4>3. Bagaimana dampak edukasi melalui website interaktif?</h4>
                     <p><strong>Dampak Proyeksi:</strong></p>
                     <ul>
-                        <li><strong>Cognitive Impact:</strong> Meningkatkan pemahaman dari 33% → 75% dalam 6 bulan</li>
-                        <li><strong>Behavioral Impact:</strong> Estimasi reduction 20-30% dalam water consumption</li>
-                        <li><strong>Social Impact:</strong> Membentuk 50 Water Champions yang educate 20 peers (multiplier 1:20)</li>
-                        <li><strong>Institutional Impact:</strong> Data-driven policy recommendations</li>
-                        <li><strong>Long-term Impact:</strong> Generasi water-conscious professionals</li>
+                        <li><strong>Dampak Kognitif:</strong> Meningkatkan pemahaman dari 33% → 75% dalam 6 bulan</li>
+                        <li><strong>Dampak Perilaku:</strong> Estimasi pengurangan 20-30% dalam konsumsi air</li>
+                        <li><strong>Dampak Sosial:</strong> Membentuk 50 Juara Air yang mendidik 20 rekan (pengganda 1:20)</li>
+                        <li><strong>Dampak Institusional:</strong> Rekomendasi kebijakan berbasis data</li>
+                        <li><strong>Dampak Jangka Panjang:</strong> Generasi profesional sadar air</li>
                     </ul>
                 </div>
 
                 <div class="intelligence-box">
-                    <h3>🚀 Transformasi yang Diharapkan</h3>
+                    <h3><span class="custom-icon icon-rocket"></span> Transformasi yang Diharapkan</h3>
                     
-                    <p><strong>FROM: Passive Consumers → TO: Active Stewards</strong></p>
+                    <p><strong>DARI: Konsumen Pasif → MENJADI: Pengelola Aktif</strong></p>
                     <ul>
                         <li>Dari pengguna tidak sadar → pengelola bertanggung jawab</li>
-                        <li>Dari ketidaktahuan → water literacy champions</li>
-                        <li>Dari perilaku konsumtif → praktik berkelanjutan</li>
-                        <li>Dari individu terisolasi → komunitas praktik kuat</li>
+                        <li>Dari ketidaktahuan → juara literasi air</li>
+                        <li>Dari konsumsi tanpa pikir → keputusan berbasis data</li>
+                        <li>Dari individu terisolasi → komunitas kolaboratif</li>
+                        <li>Dari penerima informasi → pencipta inovasi</li>
                     </ul>
-
-                    <p><strong>Cascade Effect yang Diharapkan:</strong></p>
+                    <p><strong> Efek Cascade yang Diharapkan:</strong></p>
                     <ul>
-                        <li><strong>Level 1:</strong> Mahasiswa mengurangi personal water footprint</li>
-                        <li><strong>Level 2:</strong> Membentuk social norm baru di kampus</li>
-                        <li><strong>Level 3:</strong> Influence keluarga dan komunitas asal</li>
-                        <li><strong>Level 4:</strong> Advocacy untuk policy changes</li>
+                        <li><strong>Tingkat 1:</strong> Mahasiswa mengurangi jejak air pribadi</li>
+                        <li><strong>Tingkat 2:</strong> Membentuk norma sosial baru di kampus</li>
+                        <li><strong>Tingkat 3:</strong> Mempengaruhi keluarga dan komunitas asal</li>
+                        <li><strong>Tingkat 4:</strong> Advokasi untuk perubahan kebijakan</li>
                         <li><strong>Level 5:</strong> Career paths yang water-conscious</li>
                     </ul>
                 </div>
