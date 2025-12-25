@@ -1551,6 +1551,41 @@
                 }
             });
 
+
+            // Chart 3: Pemahaman Gadget
+            const ctx3 = document.getElementById('gadgetChart').getContext('2d');
+            new Chart(ctx3, {
+                type: 'pie',
+                data: {
+                    labels: ['Sangat Baik (5)', 'Baik (4)', 'Cukup (3)'],
+                    datasets: [{
+                        data: [13, 7, 1],
+                        backgroundColor: [
+                            chartColors.primary,
+                            chartColors.secondary,
+                            chartColors.tertiary
+                        ],
+                        borderColor: '#0a0e0a',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#8fb88a', padding: 15 }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Rata-rata: 4.5/5 - Literasi Digital Sangat Tinggi',
+                            color: '#a8d5a3'
+                        }
+                    }
+                }
+            });
+
             // Chart 4: Pengetahuan Pengelolaan
             const ctx4 = document.getElementById('pengelolaanChart').getContext('2d');
             new Chart(ctx4, {
